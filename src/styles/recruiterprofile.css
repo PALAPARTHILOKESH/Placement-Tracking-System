@@ -1,0 +1,125 @@
+/* General Page Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.profile-header {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 20%;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    height: 100vh;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 2%; /* Decrease left-side margin */
+    margin-right: 20%; /* Increase right-side margin */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Form Section */
+form {
+    max-width: 1500px;
+    margin: 20px auto;
+    margin-left: 20%;
+    padding: 20px;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    background: #ecf0f1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Form Layout */
+form .photo-container {
+    flex: 1 1 200px; /* Allow photo container to adjust based on space */
+    text-align: center;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+form .form-fields {
+    flex: 2 1 600px; /* Form fields take up more space */
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+}
+
+/* Button Section */
+button {
+    margin-right: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #2ecc71;
+}
+
+button[type="button"] {
+    background-color: #e74c3c;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .main-content {
+        margin: 0; /* Remove side margins on small screens */
+    }
+
+    form {
+        flex-direction: column; /* Stack items vertically on small screens */
+        padding: 10px;
+    }
+
+    form .photo-container,
+    form .form-fields {
+        flex: 1 1 100%; /* Items take full width on small screens */
+    }
+
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+}

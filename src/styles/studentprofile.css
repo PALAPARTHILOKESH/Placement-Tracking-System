@@ -1,0 +1,9 @@
+/* Ensure the profile image is round and small */
+.profile-photo {
+    width: 100px; /* Set a smaller size */
+    height: 100px; /* Ensure the height matches the width */
+    border-radius: 50%; /* Make it round */
+    object-fit: fill; /* Ensure the image covers the circle without distortion */
+    border: 2px solid #3498db; /* Optional: Add a border for a nicer look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+  }

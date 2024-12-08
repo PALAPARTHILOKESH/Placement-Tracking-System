@@ -1,0 +1,107 @@
+.sidebar {
+  width: 250px;
+  background: linear-gradient(145deg, #4e54c8, #8f94fb); /* Gradient background */
+  color: #ffffff;
+  height: 100vh;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  transition: all 0.3s ease-in-out;
+  border-top-right-radius: 20px; /* Rounded top-right corner */
+  border-bottom-right-radius: 20px; /* Rounded bottom-right corner */
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffd700; /* Gold color for logo */
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e0e0e0; /* Soft light gray for menu items */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu > li:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent hover effect */
+  color: #ffffff; /* Bright text on hover */
+}
+
+.submenu {
+  list-style: none;
+  padding-left: 20px;
+  margin: 0;
+  border-left: 2px solid rgba(255, 255, 255, 0.3); /* Subtle border for submenu */
+}
+
+.submenu > li {
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #d1d1d1; /* Subtle gray for submenu items */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submenu > li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.submenu a {
+  color: inherit; /* Match text color */
+  text-decoration: none; /* Remove underline */
+}
+
+.submenu a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Style for menu icons */
+.menu > li svg,
+.submenu > li svg {
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 1.2em; /* Slightly larger icons */
+}
+
+/* Add subtle animation for submenu opening/closing */
+.menu > li .submenu {
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+}
+
+.menu > li.open .submenu {
+  max-height: 300px; /* Adjust as needed */
+}
+
+.menu > li.closed .submenu {
+  max-height: 0;
+}
+.logout-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+}
+
+
